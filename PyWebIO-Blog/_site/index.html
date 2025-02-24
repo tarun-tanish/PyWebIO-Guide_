@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>PyWebIO Guide: Building Interactive Web Apps | PyWebIO</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="PyWebIO Guide: Building Interactive Web Apps" />
+<meta name="author" content="Saketh, Tarun, Mrudal" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This is a blog article for PyWebIO, which enables you to make different interactive web applications with Python. This is referred from many official websites, try visiting them for more information." />
+<meta property="og:description" content="This is a blog article for PyWebIO, which enables you to make different interactive web applications with Python. This is referred from many official websites, try visiting them for more information." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="PyWebIO" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-02-23T00:00:00+05:30" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="PyWebIO Guide: Building Interactive Web Apps" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Saketh, Tarun, Mrudal"},"dateModified":"2025-02-23T00:00:00+05:30","datePublished":"2025-02-23T00:00:00+05:30","description":"This is a blog article for PyWebIO, which enables you to make different interactive web applications with Python. This is referred from many official websites, try visiting them for more information.","headline":"PyWebIO Guide: Building Interactive Web Apps","name":"PyWebIO","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="PyWebIO" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">PyWebIO</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a><a class="page-link" href="/">PyWebIO Guide: Building Interactive Web Apps </a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">PyWebIO Guide: Building Interactive Web Apps </h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2025-02-23T00:00:00+05:30" itemprop="datePublished">Feb 23, 2025
+      </time>• <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Saketh, Tarun, Mrudal</span></span></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <h2 id="what-is-pywebio">What is PyWebIO?</h2>
+<p>PyWebIO is a Python library that enables us to create interactive web applications with minimal effort just using python. For anyone wondering what web applications are, they are interactive software programs that run in a web browser, allowing users to perform tasks, submit data, and receive dynamic responses without needing to install anything on their device. PyWebIO provides a simple, high-level API for building web interfaces.</p>
+
+<h3 id="how-to-install-pywebio">How to install PyWebIO?</h3>
+<p>Installing PyWebIO is straightforward. Ensure that Python is already installed on your system and python version should be 3.5.2 or newer. Run the below code in</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip <span class="nb">install</span> <span class="nt">-U</span> pywebio
+</code></pre></div></div>
+<p>PyWebIO is now installed on your system. Start using it with python to develop web applications!</p>
+
+<h3 id="features-of-pywebio">Features of PyWebIO</h3>
+<ul>
+  <li>Simple syntax</li>
+  <li>Supports interactive UI elements</li>
+  <li>No need to write HTML/CSS/J</li>
+  <li>Rich Input &amp; Output Options: It provides built-in functions for various input types like text, numbers, radio buttons, checkboxes, file uploads, and more. For output, you can display formatted text, tables, images, and even interactive elements.</li>
+  <li>HTML and CSS Integration: While PyWebIO is Python-based, it also supports HTML and CSS through put_html(), allowing you to style your application, embed multimedia, and enhance the UI.</li>
+  <li>Markdown &amp; HTML Support: Render HTML and Markdown directly within your application.</li>
+  <li>PyWebIO provides several built-in modules that allow developers to build interactive web applications easily. Below are the key modules along with their explanations:</li>
+</ul>
+
+<h3 id="built-in-modules-of-pywebio">Built-in Modules of PyWebIO</h3>
+<p>PyWebIO provides several built-in modules to simplify web development:</p>
+
+<h4 id="1-input-handling-pywebioinput">1. Input Handling (<code class="language-plaintext highlighter-rouge">pywebio.input</code>)</h4>
+<p>This module enables user interaction by providing various input methods.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">input()</code>: Text input field.</li>
+  <li><code class="language-plaintext highlighter-rouge">textarea()</code>: Multi-line text input.</li>
+  <li><code class="language-plaintext highlighter-rouge">select()</code>: Dropdown selection.</li>
+  <li><code class="language-plaintext highlighter-rouge">radio()</code>: Single-choice selection.</li>
+  <li><code class="language-plaintext highlighter-rouge">checkbox()</code>: Multi-choice selection.</li>
+  <li><code class="language-plaintext highlighter-rouge">file_upload()</code>: Allows users to upload files.</li>
+</ul>
+
+<h4 id="2-output-display-pywebiooutput">2. Output Display (<code class="language-plaintext highlighter-rouge">pywebio.output</code>)</h4>
+<p>Used for displaying text, tables, images, and formatted content.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">put_text()</code>: Displays plain text.</li>
+  <li><code class="language-plaintext highlighter-rouge">put_html()</code>: Renders custom HTML and CSS.</li>
+  <li><code class="language-plaintext highlighter-rouge">put_image()</code>: Displays images.</li>
+  <li><code class="language-plaintext highlighter-rouge">put_table()</code>: Creates structured tables.</li>
+  <li><code class="language-plaintext highlighter-rouge">put_markdown()</code>: Renders Markdown content.</li>
+  <li><code class="language-plaintext highlighter-rouge">put_buttons()</code>: Adds clickable buttons for interaction.</li>
+</ul>
+
+<h4 id="3-session-management-pywebiosession">3. Session Management (<code class="language-plaintext highlighter-rouge">pywebio.session</code>)</h4>
+<p>Helps in managing user sessions dynamically.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">set_env()</code>: Configures UI settings.</li>
+  <li><code class="language-plaintext highlighter-rouge">run_async()</code>: Executes functions asynchronously. This means that instead of waiting for a function to complete, the program can continue running other tasks simultaneously.</li>
+  <li><code class="language-plaintext highlighter-rouge">hold()</code>: Keeps the session open even after script execution.</li>
+</ul>
+
+<h4 id="4-file-handling-pywebiofile">4. File Handling (<code class="language-plaintext highlighter-rouge">pywebio.file</code>)</h4>
+<p>Manages file uploads and downloads.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">download()</code>: Lets users download files.</li>
+  <li><code class="language-plaintext highlighter-rouge">file_upload()</code>: Allows users to upload files for processing.</li>
+</ul>
+
+<h4 id="5-web-framework-integration-pywebioplatform">5. Web Framework Integration (<code class="language-plaintext highlighter-rouge">pywebio.platform</code>)</h4>
+<p>PyWebIO can be integrated with frameworks like Flask, Django, FastAPI, and Tornado.</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">start_server()</code>: Runs PyWebIO as a local web server.</li>
+  <li><code class="language-plaintext highlighter-rouge">webio_view()</code>: Allows embedding PyWebIO apps inside Flask or Django routes.</li>
+</ul>
+
+<h4 id="6-interactive-charts-pywebiooutput">6. Interactive Charts (<code class="language-plaintext highlighter-rouge">pywebio.output</code>)</h4>
+<p>Supports visualization by integrating with Matplotlib and Plotly to display interactive graphs.</p>
+
+<hr />
+
+<p>These features make PyWebIO an excellent choice for developing Python-based web applications quickly and efficiently!</p>
+<h3 id="example-codes">Example Codes</h3>
+<p>Here are few examples of code for demonstration:</p>
+<h4 id="1-a-simple-code-that-creates-a-web-page-that-says-hello-to-the-user">1. A simple code that creates a web page that says hello to the user</h4>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pywebio.input</span> <span class="kn">import</span> <span class="nb">input</span>
+<span class="kn">from</span> <span class="n">pywebio.output</span> <span class="kn">import</span> <span class="n">put_text</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Enter your name:</span><span class="sh">"</span><span class="p">)</span>
+<span class="nf">put_text</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Hello, </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s">!</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Explanation:</p>
+
+<p>This line imports the input function from the pywebio.input module, which allows us to take user input in a web-based interface.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pywebio.input</span> <span class="kn">import</span> <span class="nb">input</span>
+</code></pre></div></div>
+<p>Here, we import the put_text function from pywebio.output. This function is used to display text output on the web page.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pywebio.output</span> <span class="kn">import</span> <span class="n">put_text</span>
+</code></pre></div></div>
+<p>In the next line we declare variable <code class="language-plaintext highlighter-rouge">name</code> to take input from user. Finally, the <code class="language-plaintext highlighter-rouge">put_text()</code> function is used to display a greeting message with the user’s name.</p>
+
+<p>Here is the input page:</p>
+
+<p><img src="/assests/image1.jpeg" alt="Input page1" /></p>
+
+<p>This is how our output looks:</p>
+
+<p><img src="/assests/image2.jpeg" alt="Output page2" /></p>
+
+<h4 id="2-a-number-guessing-game">2. A number guessing game</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pywebio.input</span> <span class="kn">import</span> <span class="nb">input</span><span class="p">,</span> <span class="n">NUMBER</span>
+<span class="kn">from</span> <span class="n">pywebio.output</span> <span class="kn">import</span> <span class="n">put_text</span><span class="p">,</span> <span class="n">put_html</span>
+<span class="kn">from</span> <span class="n">pywebio.session</span> <span class="kn">import</span> <span class="n">set_env</span>
+<span class="kn">from</span> <span class="n">pywebio</span> <span class="kn">import</span> <span class="n">start_server</span>
+<span class="kn">import</span> <span class="n">random</span>
+
+<span class="k">def</span> <span class="nf">number_guessing_game</span><span class="p">():</span>
+    <span class="nf">set_env</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sh">"</span><span class="s">Number Guessing Game</span><span class="sh">"</span><span class="p">)</span>  <span class="c1"># Sets the webpage title
+</span>    <span class="n">secret_number</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>  <span class="c1"># Random number between 1 and 10
+</span>    
+    <span class="nf">put_html</span><span class="p">(</span><span class="sh">"</span><span class="s">&lt;h2&gt;Welcome to the Number Guessing Game!&lt;/h2&gt;</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">put_text</span><span class="p">(</span><span class="sh">"</span><span class="s">Guess a number between 1 and 10.</span><span class="sh">"</span><span class="p">)</span>
+    
+    <span class="c1"># Taking user input
+</span>    <span class="n">guess</span> <span class="o">=</span> <span class="nf">input</span><span class="p">(</span><span class="sh">"</span><span class="s">Enter your guess:</span><span class="sh">"</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">NUMBER</span><span class="p">)</span>
+
+    <span class="c1"># Change background color using &lt;style&gt; tag
+</span>    <span class="k">if</span> <span class="n">guess</span> <span class="o">==</span> <span class="n">secret_number</span><span class="p">:</span>
+        <span class="nf">put_html</span><span class="p">(</span><span class="sh">"""</span><span class="s">
+            &lt;style&gt;
+                body { background-color: green; }
+            &lt;/style&gt;
+        </span><span class="sh">"""</span><span class="p">)</span>
+        <span class="nf">put_text</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">🎉 Congratulations! You guessed it right. The number was </span><span class="si">{</span><span class="n">secret_number</span><span class="si">}</span><span class="s">.</span><span class="sh">"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nf">put_html</span><span class="p">(</span><span class="sh">"""</span><span class="s">
+            &lt;style&gt;
+                body { background-color: red; }
+            &lt;/style&gt;
+        </span><span class="sh">"""</span><span class="p">)</span>
+        <span class="nf">put_text</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">❌ Oops! Wrong guess. The number was </span><span class="si">{</span><span class="n">secret_number</span><span class="si">}</span><span class="s">. Try again!</span><span class="sh">"</span><span class="p">)</span>
+
+<span class="c1"># Running the game
+</span><span class="nf">start_server</span><span class="p">(</span><span class="n">number_guessing_game</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8080</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Explanation:</p>
+
+<p><code class="language-plaintext highlighter-rouge">set_env(title="Number Guessing Game")</code> This sets the title of the web page, which appears on the browser tab.</p>
+
+<p><code class="language-plaintext highlighter-rouge">The random.randint(1, 10)</code> function generates a random integer between the given range (1 to 10 in this case), which serves as the secret number for the game.</p>
+
+<p><code class="language-plaintext highlighter-rouge">put_html("&lt;h2&gt;Welcome to the Number Guessing Game!&lt;/h2&gt;")</code> This uses put_html() to insert an HTML &lt;h2&gt; heading, making the introduction more visually appealing.</p>
+
+<p><code class="language-plaintext highlighter-rouge">input("Enter your guess:", type=NUMBER)</code> Unlike the previous example, this input() function specifies type=NUMBER, ensuring that the user can only enter numeric values.</p>
+
+<p><code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> is used to change background colour. The <code class="language-plaintext highlighter-rouge">put_html()</code> function is used to inject CSS styles dynamically.
+If the user guesses correctly, it changes the background to green.
+If the guess is incorrect, it changes the background to red.</p>
+
+<p><code class="language-plaintext highlighter-rouge">start_server(number_guessing_game, port=8080)</code>This runs the function number_guessing_game() as a PyWebIO web application on port 8080, making it accessible in a web browser.</p>
+
+<p>This is the input page:</p>
+
+<p><img src="/assests/image3.jpeg" alt="Input page3" /></p>
+
+<p>This is the output when guessed number is correct:</p>
+
+<p><img src="/assests/image5.jpeg" alt="Output page4" /></p>
+
+<p>This is the output when guessed number is wrong:</p>
+
+<p><img src="/assests/image4.jpeg" alt="Output page5" /></p>
+
+<h4 id="3-multiplication-table-generator">3. Multiplication table generator</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pywebio.input</span> <span class="kn">import</span> <span class="nb">input</span> <span class="k">as</span> <span class="n">web_input</span><span class="p">,</span> <span class="n">NUMBER</span>
+<span class="kn">from</span> <span class="n">pywebio.output</span> <span class="kn">import</span> <span class="n">put_text</span><span class="p">,</span> <span class="n">put_table</span><span class="p">,</span> <span class="n">clear</span>
+<span class="kn">from</span> <span class="n">pywebio</span> <span class="kn">import</span> <span class="n">start_server</span>
+
+<span class="k">def</span> <span class="nf">generate_table</span><span class="p">():</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="nf">web_input</span><span class="p">(</span><span class="sh">"</span><span class="s">Enter a number to generate its multiplication table:</span><span class="sh">"</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">NUMBER</span><span class="p">)</span>
+    
+    <span class="c1"># Clear previous output
+</span>    <span class="nf">clear</span><span class="p">()</span>
+    
+    <span class="nf">put_text</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Multiplication Table for </span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+    
+    <span class="c1"># Generate table data
+</span>    <span class="n">table_data</span> <span class="o">=</span> <span class="p">[[</span><span class="sh">"</span><span class="s">Multiplier</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">Result</span><span class="sh">"</span><span class="p">]]</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
+        <span class="n">table_data</span><span class="p">.</span><span class="nf">append</span><span class="p">([</span><span class="sa">f</span><span class="sh">"</span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="s"> × </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="sh">"</span><span class="p">,</span> <span class="n">num</span> <span class="o">*</span> <span class="n">i</span><span class="p">])</span>
+    
+    <span class="nf">put_table</span><span class="p">(</span><span class="n">table_data</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
+    <span class="nf">start_server</span><span class="p">(</span><span class="n">generate_table</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8080</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Explanation:</p>
+
+<p>Input is imported as <code class="language-plaintext highlighter-rouge">web_input</code> from <code class="language-plaintext highlighter-rouge">pywebio.input</code> import input as web_input renames input to web_input to avoid conflicts with Python’s built-in input() function.</p>
+
+<p><code class="language-plaintext highlighter-rouge">clear()</code> is used to remove any previous output before displaying the new multiplication table.</p>
+
+<p><code class="language-plaintext highlighter-rouge">put_table()</code> This function is used to display tabular data in a structured format. The first row <code class="language-plaintext highlighter-rouge">(table_data = [["Multiplier", "Result"]])</code> serves as the header.</p>
+
+<p><code class="language-plaintext highlighter-rouge">if __name__ == "__main__":</code> This ensures the script only runs the web server when executed directly, preventing unintended execution when imported into another script.</p>
+
+<p>Input:</p>
+
+<p><img src="/assests/image7.png" alt="Input page6" /></p>
+
+<p>Output:</p>
+
+<p><img src="/assests/image6.png" alt="Output page7" /></p>
+
+<h4 id="4-guessing-whether-the-given-number-is-happy-number-or-not">4. Guessing whether the given number is Happy number or not</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="n">pywebio.input</span> <span class="kn">import</span> <span class="nb">input</span>
+<span class="kn">from</span> <span class="n">pywebio.output</span> <span class="kn">import</span> <span class="n">put_text</span><span class="p">,</span> <span class="n">put_buttons</span><span class="p">,</span> <span class="n">clear</span>
+<span class="kn">from</span> <span class="n">pywebio</span> <span class="kn">import</span> <span class="n">start_server</span>
+<span class="kn">import</span> <span class="n">random</span>
+
+<span class="k">def</span> <span class="nf">is_happy_number</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">seen</span> <span class="o">=</span> <span class="nf">set</span><span class="p">()</span>
+    <span class="k">while</span> <span class="n">n</span> <span class="o">!=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="n">n</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+        <span class="n">seen</span><span class="p">.</span><span class="nf">add</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nf">sum</span><span class="p">(</span><span class="nf">int</span><span class="p">(</span><span class="n">digit</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">digit</span> <span class="ow">in</span> <span class="nf">str</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span>
+
+<span class="k">def</span> <span class="nf">play_game</span><span class="p">():</span>
+    <span class="nf">clear</span><span class="p">()</span>  
+    <span class="nf">put_markdown</span><span class="p">(</span>
+        <span class="sh">"</span><span class="s">A **Happy Number** is a number that will eventually reache **1** when you keep </span><span class="sh">"</span>
+        <span class="sh">"</span><span class="s">replacing it with the sum of the squares of its digits. If it falls into </span><span class="sh">"</span>
+        <span class="sh">"</span><span class="s">a repeating cycle that does **not reach 1**, then it is **not a Happy Number**.</span><span class="sh">"</span>
+    <span class="p">)</span>
+    <span class="nf">put_markdown</span><span class="p">(</span>
+        <span class="sh">"</span><span class="s">**Example:**</span><span class="se">\n</span><span class="sh">"</span>
+        <span class="sh">"</span><span class="s">- **19** → 1² + 9² = 82</span><span class="se">\n</span><span class="sh">"</span>
+    <span class="p">)</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="n">random</span><span class="p">.</span><span class="nf">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>  
+    <span class="nf">put_text</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">The generated number is: </span><span class="si">{</span><span class="n">num</span><span class="si">}</span><span class="sh">"</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">check_answer</span><span class="p">(</span><span class="n">choice</span><span class="p">):</span>
+        <span class="n">correct</span> <span class="o">=</span> <span class="nf">is_happy_number</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+        <span class="nf">if </span><span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="sh">"</span><span class="s">Happy Number</span><span class="sh">"</span> <span class="ow">and</span> <span class="n">correct</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="sh">"</span><span class="s">Not a Happy Number</span><span class="sh">"</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">correct</span><span class="p">):</span>
+            <span class="nf">put_text</span><span class="p">(</span><span class="sh">"</span><span class="s">Correct Answer!</span><span class="sh">"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nf">put_text</span><span class="p">(</span><span class="sa">f</span><span class="sh">"</span><span class="s">Wrong! It is </span><span class="si">{</span><span class="sh">'</span><span class="s">Happy Number</span><span class="sh">'</span> <span class="k">if</span> <span class="n">correct</span> <span class="k">else</span> <span class="sh">'</span><span class="s">Not a Happy Number</span><span class="sh">'</span><span class="si">}</span><span class="s">.</span><span class="sh">"</span><span class="p">)</span>
+
+    <span class="nf">put_text</span><span class="p">(</span><span class="sh">"</span><span class="s">Do you think this is a Happy Number?</span><span class="sh">"</span><span class="p">)</span>
+    <span class="nf">put_buttons</span><span class="p">([</span><span class="sh">"</span><span class="s">Happy Number</span><span class="sh">"</span><span class="p">,</span> <span class="sh">"</span><span class="s">Not a Happy Number</span><span class="sh">"</span><span class="p">],</span> <span class="n">onclick</span><span class="o">=</span><span class="n">check_answer</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="sh">"</span><span class="s">__main__</span><span class="sh">"</span><span class="p">:</span>
+    <span class="nf">start_server</span><span class="p">(</span><span class="n">play_game</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">8080</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Explanation:</p>
+
+<p><code class="language-plaintext highlighter-rouge">put_buttons(["Label"], onclick=function_name)</code> for creating a button. Clicking it runs the function.</p>
+
+<p><code class="language-plaintext highlighter-rouge">span(result, 'color:blue; font-weight:bold;')</code> styles output text (making it bold and blue).</p>
+
+<p><code class="language-plaintext highlighter-rouge">put_markdown()</code> to display the Happy Number definition.</p>
+
+<p>Input page:</p>
+
+<p><img src="/assests/image8.jpeg" alt="Input page8" /></p>
+
+<p>After choosing answer:</p>
+
+<p><img src="/assests/image9.jpeg" alt="Output page9" /></p>
+
+<h3 id="use-cases-practical-applications">Use Cases: Practical Applications</h3>
+
+<p>PyWebIO makes web app development much simplier, making it useful in numerous real-life situations. Some of it’s practical applications are:</p>
+
+<p>-Interactive Learning Platforms: PyWebIO can be used to develop educational tools and quizzes.</p>
+
+<p>-Data Collection &amp; Surveys: Easily build online forms for collecting user feedback, conducting surveys, and processing responses.</p>
+
+<p>-Prototyping &amp; Rapid Development: Quickly create web interfaces for testing algorithms, machine learning models, or automation scripts without dealing with front-end complexities.</p>
+
+<p>-Games &amp; Fun Applications: Creating interactive games or other engaging applications.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>PyWebIO is a simple yet powerful library that allows developers to build interactive web applications using only Python, without the need of HTML, CSS, or JavaScript. With its simple and straightforward input and output functions, support for interactive UI elements, and integration with other Python modules, PyWebIO makes web development accessible to both beginners and experienced programmers.</p>
+
+<p>Whether you are building educational tools, data collection forms, real-time calculators, or fun applications, PyWebIO provides an efficient and lightweight way to create engaging web experiences. By eliminating the complexities of front-end development, it allows developers to focus entirely on the logic of their applications.</p>
+
+<p>If you’re looking for a quick and hassle-free way to build interactive web apps, PyWebIO is definitely worth exploring!</p>
+
+<p>For further details and advanced usage, refer to the <a href="https://pywebio.readthedocs.io/en/latest/">official PyWebIO documentation</a>.</p>
+
+<h3 id="references-and-further-reading">References and Further Reading</h3>
+<ul>
+  <li><a href="https://pywebio.readthedocs.io/en/latest/">Official PyWebIO documentation</a></li>
+  <li><a href="https://github.com/pywebio/PyWebIO">PyWebIO GitHub Repository</a></li>
+  <li><a href="https://www.geeksforgeeks.org/daily-latest-news-webapp-using-pywebio-in-python/">Geeksforgeeks</a></li>
+  <li><a href="https://github.com/pywebio/PyWebIO/wiki/Why-PyWebIO%3F">Why PyWebIO Github Repository</a></li>
+</ul>
+
+  </div><a class="u-url" href="/" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">PyWebIO</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">PyWebIO</li><li><a class="u-email" href="mailto:24110309@iitgn.ac.in 24110212@iitgn.ac.in 24110214@iitgn.ac.in">24110309@iitgn.ac.in 24110212@iitgn.ac.in 24110214@iitgn.ac.in</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is a blog article for PyWebIO, which enables you to make different interactive web applications with Python. This is referred from many official websites, try visiting them for more information.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
