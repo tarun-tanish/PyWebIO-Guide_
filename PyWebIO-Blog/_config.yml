@@ -23,8 +23,8 @@ title: PyWebIO
 email: 24110309@iitgn.ac.in 24110212@iitgn.ac.in 24110214@iitgn.ac.in
 description: >- # this means to ignore newlines until "baseurl:"
    This is a blog article for PyWebIO, which enables you to make different interactive web applications with Python. This is referred from many official websites, try visiting them for more information.
-baseurl: "/PyWebIO-Blog" # the subpath of your site, e.g. /blog
-url: "https://tarun-tanish.github.io/PyWebIO-Guide_" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://tarun-tanish.github.io/PyWebIO-Guide_/PyWebIO-Blog" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
